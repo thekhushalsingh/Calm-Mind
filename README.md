@@ -2,7 +2,7 @@
 
 CalmMind is a gentle, empathetic, and privacy-focused mental health web companion powered by AI. It provides supportive conversation, coping strategies like deep breathing or affirmations, and encourages users to seek professional help when needed — all with a calming user interface.
 
-![CalmMind Screenshot](static/back.jpg)
+![CalmMind Screenshot](https://github.com/thekhushalsingh/Calm-Mind/blob/main/Screenshot%20(39).png)
 
 ---
 
