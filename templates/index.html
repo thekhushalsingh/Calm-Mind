@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CalmMind Chat</title>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <header>
+      <img src="/static/mind.png" alt="CalmMind logo" class="logo" />
+      <div>
+        <h1>Calm Mind</h1>
+        <p class="tagline">Your supportive AI companion</p>
+      </div>
+    </header>
+
+    <main id="messages"></main>
+
+    <form id="chat-form" autocomplete="off">
+      <input
+        id="user-input"
+        type="text"
+        placeholder="Type your thoughts here…"
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+
+    <footer>
+      <p>
+        Developed by <strong>Khushal Singh</strong> • © 2025 All rights reserved
+      </p>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

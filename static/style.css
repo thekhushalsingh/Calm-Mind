@@ -1,0 +1,131 @@
+:root {
+  --primary: #164458d8;
+  --bg: #e0f0ff;
+  --user-bubble: #c8f7c5;
+  --bot-bubble: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: url("/static/back.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--glass-border);
+  width: 100%;
+  max-width: 420px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+header .logo {
+  width: 70px;
+  height: 70px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.1rem;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.message.user {
+  text-align: right;
+}
+
+.bubble {
+  display: inline-block;
+  padding: 0.6rem 0.9rem;
+  border-radius: 1.25rem;
+  max-width: 80%;
+}
+
+.user .bubble {
+  background: var(--user-bubble);
+}
+
+.bot .bubble {
+  background: var(--bot-bubble);
+  border: 1px solid #e2e8f0;
+}
+
+form {
+  display: flex;
+  border-top: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+form input {
+  flex: 1;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+form button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #3a56d2;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  color: #444;
+  border-top: 1px solid #ddd;
+}
